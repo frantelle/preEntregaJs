@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(37, 35, 35);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.formulario {
+    margin: auto;
+    height: 270px;
+    width: 240px;
+    background-color: rgb(184, 0, 0);
+    border: 10px;
+    border-radius: 10px;
+
+
+
+}
+
+div form {
+    box-shadow: 20px;
+    margin: 30px;
+}
+
+p {
+    color: aliceblue;
+}
+
+
+.detalles {
+    display: block;
+    margin-top: 20px;
+    margin: auto;
+    height: 280px;
+    width: 320px;
+    background-color: rgb(184, 0, 0);
+    border: 10px;
+    border-radius: 10px;
+
+}
+
+.detalles p {
+    margin-top: 20px;
+    margin-left: 3rem;
+}

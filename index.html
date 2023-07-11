@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preEntrega.css">
     <title>Simulador de Préstamos</title>
 </head>
+
 <body>
     <h1>Simulador de Préstamos online</h1>
     <script src="preEntrega.js"></script>
+    <div class="formulario" id="divPrincipal">
+        <form action="Prestamo">
+            <p>Ingrese el monto requerido</p>
+            <input id="monto" type="text">
+            <p>Ingrese su edad</p>
+            <input id="edad" type="text">
+            <p>Ingrese la cantidad de cuotas </p>
+            <select name="cuotas" id="cuotas">
+                <option value="1">1 cuota</option>
+                <option value="2">2 cuotas</option>
+                <option value="3">3 cuotas</option>
+                <option value="4">4 cuotas</option>
+                <option value="5">5 cuotas</option>
+                <option value="6">6 cuotas</option>
+                <option value="7">7 cuotas</option>
+                <option value="8">8 cuotas</option>
+                <option value="9">9 cuotas</option>
+                <option value="10">10 cuotas</option>
+                <option value="11">11 cuotas</option>
+                <option value="12">12 cuotas</option>
+            </select>
+        </form>
+        <button onclick="obtenerValorInput()">Obtener Valor</button>
+
+    </div>
+
+    
+
 </body>
+
 </html>

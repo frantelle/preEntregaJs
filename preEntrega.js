@@ -1,4 +1,82 @@
+function obtenerValorInput(){
+
+let inputmonto = document.getElementById("monto")
+let inputedad = document.getElementById("edad")
+let inputcuotas = document.getElementById("cuotas")
+
+
+
+let valormonto = inputmonto.value
+let valoredad = inputedad.value
+let valorcuotas = inputcuotas.value
+
+console.log(valormonto, valoredad, valorcuotas);
+localStorage.setItem("monto", valormonto)
+localStorage.setItem("edad", valoredad)
+localStorage.setItem("cuotas", valorcuotas)
+
+let div = document.getElementById("divPrincipal");
+
+let valorCuotasStorage = localStorage.getItem("monto", )
+
+
+div.innerHTML = `<div class="detalles">
+<p>su prestamo fue aprobado</p>
+<p>el prestamo solicitado es de:</p>
+<p>el monto total a pagar es de:</p>
+<p>la cantidad de cuotas es:</p>
+<p>el monto de cada cuota es: </p>
+</div>`;
+
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Definir la función del simulador
+  /*
 function simuladorPrestamo() {
   while (true) {
     // Mostrar el menú de opciones
@@ -6,7 +84,7 @@ function simuladorPrestamo() {
     console.log("1. Calcular el monto mensual de préstamo")
     console.log("2. Salir")
 
-    // Obtener la opción seleccionada por el usuario
+  // Obtener la opción seleccionada por el usuario
     let opcion = parseInt(prompt("Seleccione una opción:\n1. Calcular el monto mensual de préstamo\n2. Salir"))
 
     // Verificar la opción seleccionada
@@ -17,11 +95,23 @@ function simuladorPrestamo() {
 
         // Verificar si es mayor de edad utilizando un condicional
         if (edad >= 18) {
+
+          //Verificar si hay datos almacenados en el localStorage
+          let storedData = localStorage.getItem("prestamoData")
+          let data = storedData ? JSON.parse(storedData): {}
+
+
           // Calcular el monto mensual según las cuotas ingresadas utilizando un ciclo
           let montoTotal = parseInt(prompt("Ingrese el monto del préstamo"))
           
           // Monto total del préstamo
           let cuotas = parseInt(prompt("Ingrese la cantidad de cuotas deseadas:"))
+          
+          //Guardar los datos ingresados en el localStorage
+          data.montoTotal = montoTotal 
+          data.cuotas = cuotas
+          localStorage.setItem("prestamoData", JSON.stringify(data))
+
           // Crear un array para almacenar los montos mensuales
           let montosMensuales = []
 
@@ -63,4 +153,5 @@ function simuladorPrestamo() {
 }
 
 // Llamar a la función del simulador
-simuladorPrestamo()
+simuladorPrestamo()*/
+
